@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "456656042344",
+    "project_id": "android-project-bafbf",
+    "storage_bucket": "android-project-bafbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456656042344:android:3ba2f9cb45d9a629223edd",
+        "android_client_info": {
+          "package_name": "com.example.cookingrecipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456656042344-u0u3s7lt5pvvd90lvde7ljjmia45075s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cookingrecipe",
+            "certificate_hash": "0abef1d7dc67cf4a491e464d15ad32df7841962d"
+          }
+        },
+        {
+          "client_id": "456656042344-43kv47gseaakfe5qc1a9c4fni8s91e83.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVzc294X6dbA0IYTgqWKOICPqbqx2YwK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456656042344-43kv47gseaakfe5qc1a9c4fni8s91e83.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

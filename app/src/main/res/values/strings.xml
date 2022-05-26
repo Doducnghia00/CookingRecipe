@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Cooking Recipe</string>
+    <string name="home">Trang Chủ</string>
+    <string name="favorite">Yêu Thích</string>
+    <string name="chat">Thảo Luận</string>
+    <string name="account">Tài Khoản</string>
+    <string name="search_recipe">Tìm kiếm công thức</string>
+    <string name="recipe_name">Tên Món Ăn</string>
+    <string name="author_name">Tác Giả:</string>
+    <string name="tag">Tag</string>
+    <string name="ratting">Ratting:</string>
+    <string name="tag1">Tag:</string>
+    <string name="idRecipe">Mã công thức</string>
+    <string name="profile_name">Tên Hồ Sơ</string>
+    <string name="username">Tên Đăng Nhập</string>
+    <string name="password">Mật Khẩu</string>
+    <string name="email">Email</string>
+    <string name="account_info">THÔNG TIN TÀI KHOẢN</string>
+    <string name="change_password">THAY ĐỔI MẬT KHẨU</string>
+    <string name="search">Tìm Kiếm</string>
+
+</resources>
