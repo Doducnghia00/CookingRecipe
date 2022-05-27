@@ -193,13 +193,14 @@ public class FragmentFavorite extends Fragment implements RecycleViewAdapter.Ite
 
     private void getList() {
 
-        recipeList = new ArrayList<>();
+
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("food");
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                recipeList = new ArrayList<>();
                 for (DataSnapshot dataSnapshot: snapshot.getChildren()){
                     Recipe recipe = dataSnapshot.getValue(Recipe.class);
                         if(favoriteList.contains(recipe.getIdRecipe()+"")){
@@ -213,7 +214,7 @@ public class FragmentFavorite extends Fragment implements RecycleViewAdapter.Ite
                 if(recipeList.size() <1){
                     recipeList = new ArrayList<>();
                     adapter.setRecipeList(recipeList);
-                    Toast.makeText(getActivity(), "Không có dữ liệu", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getActivity(), "Không có dữ liệu", Toast.LENGTH_SHORT).show();
                 }else{
 
                     adapter.setRecipeList(recipeList);

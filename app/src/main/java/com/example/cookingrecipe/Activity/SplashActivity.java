@@ -36,7 +36,7 @@ public class SplashActivity extends AppCompatActivity {
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         }else{
-            Toast.makeText(this, user.getUid()+"", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, user.getUid()+"", Toast.LENGTH_SHORT).show();
             Log.e("Id",user.getUid()+"");
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);

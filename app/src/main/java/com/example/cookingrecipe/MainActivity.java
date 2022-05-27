@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
-        // TODO 1 Xử lý chọn và đọc ảnh
+
        // mActivityResultLauncher.launch(Intent.createChooser(intent,"Chọn Ảnh"));
 
     }

@@ -53,10 +53,10 @@ public class FragmentChat extends Fragment implements View.OnClickListener{
 
         adapter = new FirebaseListAdapter<ChatMessage>(getActivity(),ChatMessage.class,R.layout.item_chat,FirebaseDatabase.getInstance().getReference("chat_message")) {
             @Override
-            protected void populateView(View v, ChatMessage model, int position) {
-                TextView messageText = (TextView)v.findViewById(R.id.message_text);
-                TextView messageUser = (TextView)v.findViewById(R.id.message_user);
-                TextView messageTime = (TextView)v.findViewById(R.id.message_time);
+            protected void populateView(View view, ChatMessage model, int position) {
+                TextView messageText = view.findViewById(R.id.message_text);
+                TextView messageUser = view.findViewById(R.id.message_user);
+                TextView messageTime = view.findViewById(R.id.message_time);
 
                 messageText.setText(model.getMessageText());
                 messageUser.setText(model.getMessageUser());
@@ -81,7 +81,10 @@ public class FragmentChat extends Fragment implements View.OnClickListener{
     public void onClick(View view) {
         if(view == btSend){
             FirebaseUser user =  FirebaseAuth.getInstance().getCurrentUser();
-
+            if(input.getText().toString().trim().equals("")) {
+                Toast.makeText(getActivity(), "Vui lòng điền nội dung tin nhắn", Toast.LENGTH_SHORT).show();
+                return;
+            }
             if(user == null){
                 Toast.makeText(getActivity(), "Vui lòng đăng nhập để gửi tin nhắn", Toast.LENGTH_SHORT).show();
             }else{
@@ -109,7 +112,7 @@ public class FragmentChat extends Fragment implements View.OnClickListener{
                 }
 
 
-                // Clear the input
+                // Clear input
                 input.setText("");
             }
         }

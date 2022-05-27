@@ -10,10 +10,13 @@
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/drawable/custom_button.xml" value="0.1625" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/drawable/custom_button2.xml" value="0.2155" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/drawable/email.xml" value="0.1605" />
+        <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/drawable/ic_check.xml" value="0.1845" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/drawable/ic_favorite.xml" value="0.2155" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/drawable/ic_settings.xml" value="0.1635" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/drawable/lock.xml" value="0.1635" />
+        <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/drawable/myedittext.xml" value="0.2155" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/activity_account.xml" value="0.2513586956521739" />
+        <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/activity_add_post.xml" value="0.17905982905982906" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/activity_change_password.xml" value="0.23854166666666668" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/activity_information.xml" value="0.2513586956521739" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/activity_login.xml" value="0.2513586956521739" />
@@ -24,6 +27,7 @@
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/activity_search.xml" value="0.20854700854700856" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/activity_splash.xml" value="0.2513586956521739" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/activity_test.xml" value="0.20854700854700856" />
+        <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/activity_user_post.xml" value="0.14444444444444443" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/fragment_account.xml" value="0.20244565217391305" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/fragment_chat.xml" value="0.20244565217391305" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/fragment_favorite.xml" value="0.20244565217391305" />
@@ -32,8 +36,10 @@
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/item_chat.xml" value="0.2513586956521739" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/item_favorite.xml" value="0.536" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/item_food.xml" value="0.20854700854700856" />
+        <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/item_post.xml" value="0.536" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/layout/item_recipe.xml" value="0.4" />
         <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/menu/navigation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Projects/CookingRecipe/app/src/main/res/menu/user_navigation.xml" value="0.14444444444444443" />
       </map>
     </option>
   </component>

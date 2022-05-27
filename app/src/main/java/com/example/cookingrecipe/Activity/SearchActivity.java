@@ -72,6 +72,7 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
             //getListByTag(tag);
         }
 
+        //TODO Sort
 
 
         btSearch.setOnClickListener(this);

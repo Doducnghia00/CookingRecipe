@@ -11,25 +11,25 @@ public class User {
     private int id;
     private int userId;
     private int avatar;
-    private String username, password, fullName, dateOfBirth, address;
+    private String displayName, email, dateOfBirth, address;
 
     public User() {
     }
 
-    public User(int userId, int avatar, String username, String password, String fullName, String dateOfBirth, String address) {
+    public User(int id, int userId, int avatar, String displayName, String email, String dateOfBirth, String address) {
+        this.id = id;
         this.userId = userId;
         this.avatar = avatar;
-        this.username = username;
-        this.password = password;
-        this.fullName = fullName;
+        this.displayName = displayName;
+        this.email = email;
         this.dateOfBirth = dateOfBirth;
         this.address = address;
     }
 
-    public User(String username, String password, String fullName) {
-        this.username = username;
-        this.password = password;
-        this.fullName = fullName;
+    public User(int userId, String displayName, String email) {
+        this.userId = userId;
+        this.displayName = displayName;
+        this.email = email;
     }
 
     public int getId() {
@@ -56,28 +56,20 @@ public class User {
         this.avatar = avatar;
     }
 
-    public String getUsername() {
-        return username;
+    public String getDisplayName() {
+        return displayName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
     }
 
-    public String getPassword() {
-        return password;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getDateOfBirth() {
@@ -94,5 +86,18 @@ public class User {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", avatar=" + avatar +
+                ", displayName='" + displayName + '\'' +
+                ", email='" + email + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 }

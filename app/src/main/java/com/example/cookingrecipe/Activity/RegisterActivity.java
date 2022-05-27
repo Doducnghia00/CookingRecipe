@@ -10,6 +10,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -22,7 +23,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
-    private EditText email,username, password, rePassword;
+    private EditText email,displayName, password, rePassword;
     private Button btRegister;
     private ProgressDialog progressDialog;
     private ProgressBar progressBar;
@@ -38,7 +39,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     private void initView() {
         progressDialog = new ProgressDialog(this);
         email = findViewById(R.id.email);
-        username = findViewById(R.id.username);
+        displayName = findViewById(R.id.display_name);
+        displayName.setVisibility(View.GONE);
         password = findViewById(R.id.password);
         rePassword = findViewById(R.id.rPassword);
         btRegister = findViewById(R.id.bt_register);
@@ -53,8 +55,15 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void onClickRegister() {
+        String displayNameString = displayName.getText().toString().trim();
+        String rPassword = rePassword.getText().toString().trim();
         String emailString = email.getText().toString().trim();
         String passwordString = password.getText().toString().trim();
+
+        if(!passwordString.equals(rPassword)){
+            Toast.makeText(this, "Hai trường mật khẩu phải giống nhau", Toast.LENGTH_SHORT).show();
+            return;
+        }
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         //progressDialog.show();
         progressBar.setVisibility(View.VISIBLE);
@@ -65,12 +74,14 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         //progressDialog.dismiss();
                         progressBar.setVisibility(View.GONE);
                         if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
+
                             Log.d("Register", "createUserWithEmail:success");
-//                            FirebaseUser user = mAuth.getCurrentUser();
-//                            updateUI(user);
+//                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+//                            UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
+//                                    .setDisplayName(displayNameString).build();
 
                             Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+
                             startActivity(intent);
                             finishAffinity();
                         } else {
